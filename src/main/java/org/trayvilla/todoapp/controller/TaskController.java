@@ -3,7 +3,9 @@ package org.trayvilla.todoapp.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.trayvilla.todoapp.models.Task;
 import org.trayvilla.todoapp.services.TaskService;
 
@@ -28,6 +30,12 @@ public class TaskController {
     public String getTask(Model model){
         List<Task> tasks = taskService.getAllTasks();
         model.addAttribute("tasks",tasks);
+        return "tasks";
+    }
+
+    @PutMapping
+    public String createTask(@RequestParam String title ){
+        taskService.createTask(title);
         return "tasks";
     }
 
