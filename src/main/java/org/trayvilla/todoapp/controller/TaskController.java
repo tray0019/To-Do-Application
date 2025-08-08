@@ -36,5 +36,16 @@ public class TaskController {
         return "redirect:/"; //redirect to the root url
     }
 
+    @GetMapping("/{id}/delete")
+    public String deleteTask(@PathVariable Long id){
+        taskService.deleteTask(id);
+        return "redirect:/";
+    }
+
+    @GetMapping("/{id}/toggle")
+    public String toggleTask(@PathVariable Long id){
+        taskService.toggleTask(id);
+        return "redirect:/";
+    }
 
 }
