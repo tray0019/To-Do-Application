@@ -1,7 +1,5 @@
 # To-Do-Application
 
-A simple task manager that allows users to add, toggle, and delete tasks.
-
 ![Java](https://img.shields.io/badge/Java-21-blue)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.2.4-brightgreen)
 ![MySQL](https://img.shields.io/badge/Database-MySQL-orange)
@@ -10,6 +8,8 @@ A simple task manager that allows users to add, toggle, and delete tasks.
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-blueviolet)
 ![IntelliJ IDEA](https://img.shields.io/badge/IDE-IntelliJ_IDEA-purple)
 ![GitHub](https://img.shields.io/badge/Version_Control-GitHub-black)
+
+A simple task manager that allows users to add, toggle, and delete tasks.
 
 ## Technologies and Tools
 - Spring Boot
